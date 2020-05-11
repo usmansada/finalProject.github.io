@@ -1,143 +1,281 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Final project</title>
-        <link rel="stylesheet" href="style 2.css" type="text/css">
-        <script src="javascript.js"></script>
-    </head>
-    <body>
-        <header>
+* {
+        margin: 0px;
+        padding: 0px;
+        max-width: 100%;
+     
+    }
+body {
+   background-image: url(wallpaper.jpg);
+   background-repeat: initial;
 
+}
+
+
+.switch {
+    position: absolute;
+    width : 42px;
+    height : 12px ;
+    left: 728px;
+    top:27px;
+    }
+    
+    .switch input {
+    opacity : 0;
+    width : 0;
+    height : 0;
+    }
+    
+    .slider {
+    position: absolute;
+    cursor : pointer ;
+    top : 0;
+    left : 0 ;
+    right : 0;
+    bottom : 0;
+    background-color : #ccc ;
+    -webkit-transition : 2s;
+    transition : 2s ;
+    }
+    .slider:before {
+    position: absolute;
+    content : "";
+    height : 12px ;
+    width : 12px;
+    left : 4px ;
+    bottom : 4px;
+    background-color : white ;
+    -webkit-transition : 2s;
+    transition : 2s ;
+    }
+    
+    input:checked + .slider {
+    background-color : #2196F3 ;
+    }
+    
+    input:focus + .slider {
+    box-shadow : 0 0 1px #2196F3 ;
+    }
+    input:checked + .slider:before {
+      -webkit-transform : translateX
+    (26px) ;
+      -ms-transform : translateX(26px) ;
+       transform: translateX(26px) ;
+          }
+    .slider.round {
+         border-radius : 34px ;
+          }
+    
+    .slider.round:before {
+        border-radius : 50% ;
+              }
+            .dark-mode  header {
+                background: black;
+                color: white;
+            }   
             
-            <div class="container">
-            <p id="dark">Dark</p>     
-            <p id="light" >Light</p>
-        
-           <label class ="switch">
-        <input type="checkbox" onclick="myFunction()" >
-        <span class ="slider round" ></span >
-        </label >        
-            </div>
+            #light{
+                position: absolute;
+                left: 702px;
+                top: 24px;
+                font-size: 10px;
+                font-weight: bold;
+            }
+            #dark{
+                position: absolute;
+                left: 770px;
+                top: 24px;
+                font-size: 10px;
+                font-weight: bold;
+            } 
 
-            <img src="profile 2.jpg" alt="profile" class="image">
-            <div class="general">
-                
-                <h1><strong>Usman</strong> <em>Muhammad</em></h1>
 
-                <nav>
-                    <ul>
-                        <li>+2348105538473</li>                       
-                        <li><a href="https://www.github.com/usmansada">usmansada.github.io</a></li>
-                        <li><a href="email">usmansada60@gmail.com</a></li>
-                    </ul>              
-                </nav>
-            </div>
 
-            <div class="breaker"></div>
-        
 
-        <main>
-            <div class="general">
-                <div class="first-area">
-                <div class="left-box">
-                    <strong>I</strong>ntro                   
-                </div>
 
-                <div class="right-box">
-                    Hi, my name is Usman and am  learning web develpoment all day
-                    <br>
-                    all works and no play makes jack a dull boy 
-                    <br> 
-                    so i kick the soccer and play video games during free time. 
-                </div>
-                </div>
-            </div>
-            <br>
-            <div class="breaker"></div>
 
-            <div class="general">
-                <div class="first-area">
-                    <div class="left-box-second">
-                        Interest
-                    </div>
+header {
+    background: white;
+    width: 90vw;
+    height: 160vh;
+    position: absolute;
+    top: 85px;
+    left: 40px;
+    margin-bottom: 100px;
+    }
 
-                    <div class="right-box-second">
-                        full stack web developer | mobile App | AI aspects | CyberSecurity
-                    </div>
-                </div>                
-            </div>
-            <br><br><br>
-            <div class="breaker"></div>
+.image {
+    position: absolute;
+    top: 15px;
+    left: 130px;
+    height: 100px;
+    width: 80px;
+}
 
-            <div class="general">
-                <div class="first-area">
-                    <div class="left-box-third">
-                        Skills
-                    </div>
+.general {
+    width: 85%;
+    margin: 30px 170px 0;
+}
 
-                    <div class="right-box-third">
-                        <img src="typing.jpg" alt="Typing" class="second-image">
-                        <img src="html.png" alt="Typing" class="second-image">
-                        <img src="css.jpg" alt="Typing" class="second-image">
-                        <img src="javascript.png" alt="Typing" class="second-image">
-                        <br>
-                        <span>
-                            <div style="font-size: 15px; " > typing </div>
-                            <div style="font-size: 15px; margin: -15px 80px; " > HTML 5 </div>
-                            <div style="font-size: 15px; margin-left: 160px;" > CSS 3 </div>
-                            <div style="font-size: 15px; margin-left: 220px;" > javascript </div>
-                        </span>
-                    </div>
-                </div>                
-            </div>
-            <div class="breaker"></div>
+h1{
+    position: absolute;
+    top: 60px;
+    left: 220px;
+}
 
-            <div class="general">
-                <div class="first-area">
-                    <div class="left-box-four">
-                            Projects
-                    </div>
+nav {
+    text-align: justify;
+    margin-left: 489px;
+    margin-top: 53px;
+    line-height: 130%;
+}
 
-                    <div class="right-box-four">
-                        <a href="https://github.com/usmansada/javascript-challenges/tree/master">CHALLENGES</a>
-                    </div>
-                </div>                
-            </div>
-            <br><br><br> 
-            <div class="breaker"></div>
+nav ul li  {
+    display: block;
+    font-size: 13px;
+}
 
-            <div class="general">
-                <div class="first-area">
-                    <div class="left-box-five">
-                            Education
-                    </div>
+nav ul li a {
+    text-decoration: none;
+}
 
-                    <div class="right-box-five">
-                        <ul>
-                            <p>Primary Education<p>
-                            <p>Secondary Education<p>
-                            <p>Currently in Higher Institute<p>
-                        </ul>
-                    </div>
-                </div>                
-            </div>
-            <div class="breaker"></div>
-        </main>
-        
-        
-        <div class="general" >
-        <img src="download-profile.png" class="download-icon">
-        <br>
-        <a href="profile 2.jpg" download>
-            <button type="button" class="download-button" >click to download my full  picture</button>
-        </a>
-    </div>
-    </header>
-   
+.breaker {
+    border: 2px solid rgb(243, 149, 169);
+    margin-left: 120px;
+    margin-right: 125px;
+    margin-top: 10px;
+}
+
+.first-area {
+    width: 80%;
+    margin-left: -30px;
+    margin-top: 40px;
+    display: flex;
+    direction: row;
+}
+
+.left-box {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    width: 30%;
+    font-size: 18px;
+    color: rgb(94, 148, 209);
+}
+
+.right-box {
+    width: 70%;
+    font-weight: lighter;
+    line-height: 20px;
+    font-size: 13px;
+    margin-left: 4%;
+}
+
+.left-box-second {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    width: 30%;
+    font-size: 18px;
+    color: rgb(250, 210, 136);
+}
+
+.right-box-second {
+    color: rgb(250, 210, 136);
+    width: 70%;
+    font-weight: lighter;
+    line-height: 20px;
+    font-size: 13px;
+    margin-left: 4%;
+}
+
+.left-box-third {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    width: 30%;
+    font-size: 18px;
+    color: rgb(153, 218, 123);
+}
+
+.right-box-third {
+
+    width: 70%;
+    font-weight: lighter;
+    font-size: 13px;
+    margin-left: 4%;
+    letter-spacing: 10px;
+}
+
+.second-image {
+    height: 60px;
+    width:  60px;
+}
+
+span {
+    letter-spacing: 0px;
+    margin-top: -10px;
+}
+
+.left-box-four {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    width: 30%;
+    font-size: 18px;
+    color: rgb(248, 110, 140);
+}
+
+.right-box-four a {
+    color: rgb(52, 77, 216);
+    width: 70%;
+    font-weight: lighter;
+    font-size: 20px;
+    margin-left: 7%;
+    text-decoration: underline;
+}
+
+.left-box-five {
+    width: 30%;
+    color: rgb(77, 71, 67);
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
     
-    <button onclick="topFunction()" id="myBtn" title="Go to top">back to top</button>
-    
-    
+}
 
-    </body>
-</html>
+.right-box-five {
+    width: 70%;
+    color: rgb(77, 71, 67);
+    font-weight: lighter;
+    font-size: 15px;
+    margin-left: 2.5%;
+    line-height: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#myBtn {
+
+    position: absolute; 
+    top: 950px;
+    left: 750px;
+    border: none; 
+    outline: none; 
+    background-color: red; 
+    color: white; 
+    cursor: pointer; 
+    padding: 10px;
+    border-radius: 7px; 
+    font-size: 13px; 
+  }
+  
+  #myBtn:hover {
+    background-color: rgb(227, 245, 124); 
+  }
+
+
+
+.download-icon {
+    width: 50px;
+    height: 50px;
+    margin-left: -30px;
+}
+
+.download-button {
+    margin-left: -27px;
+}
