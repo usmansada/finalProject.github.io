@@ -6,10 +6,8 @@
     }
 body {
    background-image: url(wallpaper.jpg);
+   background-repeat: initial;
 
-}
-.container  {
-            
 }
 
 
@@ -107,7 +105,7 @@ header {
 
 .image {
     position: absolute;
-    top: 35px;
+    top: 15px;
     left: 130px;
     height: 100px;
     width: 80px;
@@ -251,31 +249,33 @@ span {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.top-button {
-    height: 40px;
-    width:  40px;
-    position: fixed;
-    top: 70%;
-    margin-left: 80%;
-    font-size: 13px;
-    color: blue;
-}
+#myBtn {
 
-.top-button:hover {
-    color: red;
-}
+    position: absolute; 
+    top: 950px;
+    left: 750px;
+    border: none; 
+    outline: none; 
+    background-color: red; 
+    color: white; 
+    cursor: pointer; 
+    padding: 10px;
+    border-radius: 7px; 
+    font-size: 13px; 
+  }
+  
+  #myBtn:hover {
+    background-color: rgb(227, 245, 124); 
+  }
 
-.top-button:active {
-    color: green;
-}
+
 
 .download-icon {
     width: 50px;
     height: 50px;
-
-    margin-left: 50px;
+    margin-left: -30px;
 }
 
 .download-button {
-        margin-left: 30px;
+    margin-left: -27px;
 }
