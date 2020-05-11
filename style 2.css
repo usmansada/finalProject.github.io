@@ -8,12 +8,16 @@ body {
    background-image: url(wallpaper.jpg);
 
 }
+.container  {
+            
+}
+
 
 .switch {
     position: absolute;
     width : 42px;
     height : 12px ;
-    left:845px;
+    left: 728px;
     top:27px;
     }
     
@@ -73,14 +77,14 @@ body {
             
             #light{
                 position: absolute;
-                left: 818px;
+                left: 702px;
                 top: 24px;
                 font-size: 10px;
                 font-weight: bold;
             }
             #dark{
                 position: absolute;
-                left: 890px;
+                left: 770px;
                 top: 24px;
                 font-size: 10px;
                 font-weight: bold;
@@ -137,7 +141,7 @@ nav ul li a {
 }
 
 .breaker {
-    border: 0.2px solid rgb(143, 65, 14);
+    border: 2px solid rgb(243, 149, 169);
     margin-left: 120px;
     margin-right: 125px;
     margin-top: 10px;
@@ -252,7 +256,7 @@ span {
     width:  40px;
     position: fixed;
     top: 70%;
-    left: 90%;
+    margin-left: 80%;
     font-size: 13px;
     color: blue;
 }
